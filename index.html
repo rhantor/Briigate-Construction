@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,226 +8,259 @@
     <title>Home : Brigate</title>
     <script src="https://kit.fontawesome.com/25b5038ea7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 </head>
+
 <body>
-    <div id="topbar">
-        <div class="topbarMain">
+    <!-- topbar -->
+    <div id="topbar" class="d-none d-lg-block">
+        <div class="topbarMain ">
             <div class="container">
-                <div class="topbar-wrapper">
+                <div class="topbar-wrapper d-flex">
                     <div class="phone">
                         <i class="fas fa-phone"></i> Phone: +(98) 888 7777
                     </div>
-
                     <div class="email">
                         <i class="fas fa-envelope"></i> Email: sample-email@example.com
-
                     </div>
-
-                    <div class="social">
+                    <div class="social d-flex">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    
-        <header class="mainmenu">
-            <div class="container">
-                <div class="mainmenu-wrapper">
-                    <div class="logo">
-                        <img src="image/logo.svg" alt="logo">
-                    </div>
-
-                <div class="menu">
-                    <ul class="menu-item">
-                        <li id="active"><a href="#">Home <i class="fas fa-chevron-down"></i></a>
-                        
-                            <ul class="hover-menu">
-                                <li><a href="#">Home1</a></li>
-                                <li><a href="#">Home2</a></li>
-                                <li><a href="#">Home3</a></li>
-                                <li><a href="#">Home4</a></li>
-                            </ul>
-                        
-                        </li>
-                        <li class="second-li"><a href="#">Page <i class="fas fa-chevron-down"></i></a>
-                        
-                            <ul class="hover-menu">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">FAQUs</a></li>
-                                <li><a href="#">404 page</a></li>
-                                <li><a href="#">tablet</a></li>
-                                <li><a href="#">member</a></li>
-                                <li><a href="#">font awesome</a></li>
-                                <li><a href="#footer">footer</a></li>
-                                <li><a href="#">middle point</a></li>
-                            </ul>
-                        
-                        </li>
-                        <li class="third-li"><a href="#">Services <i class="fas fa-chevron-down"></i></a>
-                        
-                            <ul class="hover-menu">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">FAQUs</a></li>
-                                <li><a href="#">404 page</a></li>
-                                <li><a href="#">tablet</a></li>
-                                <li><a href="#">member</a></li>
-                                <li><a href="#">font awesome</a></li>
-                                <li><a href="#footer">footer</a></li>
-                                <li><a href="#">middle point</a></li>
-                                <li><a href="#">FAQUs</a></li>
-                                <li><a href="#">404 page</a></li>
-                                <li><a href="#">social</a></li>
-                            </ul>
-                        
-                        </li>
-                        <li class="fourth-li"><a href="#">projecs <i class="fas fa-chevron-down"></i></a>
-                            <ul class="hover-menu">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">FAQUs</a></li>
-                                <li><a href="#">404 page</a></li>
-                                <li><a href="#">tablet</a></li>
-                                <li><a href="#">member</a></li>
-                                <li><a href="#">font awesome</a></li>
-                                <li><a href="#footer">footer</a></li>
-                                <li><a href="#">middle point</a></li>
-                            </ul>
-                        
-                        </li>
-                        <li class="fifth-li"><a href="#">blogs <i class="fas fa-chevron-down"></i></a>
-                            <ul class="hover-menu">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">FAQUs</a></li>
-                                <li><a href="#">404 page</a></li>
-                                <li><a href="#">tablet</a></li>
-                                <li><a href="#">member</a></li>
-                                <li><a href="#">font awesome</a></li>
-                                <li><a href="#footer">footer</a></li>
-                                <li><a href="#">middle point</a></li>
-                            </ul>
-                        
-                        </li>
-                        <li class="sixth-li"><a href="#">contact <i class="fas fa-chevron-down"></i></a>
-                            <ul class="hover-menu">
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">linkedin</a></li>
-                                <li><a href="#">Tweeter</a></li>
-                                
-                            </ul>
-                        </li>
-                        <li class="seven"><a href="#"><i class="fas fa-search"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand d-flex">
+                <img src="image/logo.svg" alt="logo">
             </div>
-        </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
 
-   
+            <div class="collapse navbar-collapse  " id="navbar">
+                <ul class="nav ml-auto">
+                    <li class="nav-item" id="active"><a class="nav-link" href="#">Home <i
+                                class="fas fa-chevron-down"></i></a>
+
+                        <ul class="hover-menu">
+                            <li><a href="#">Home1</a></li>
+                            <li><a href="#">Home2</a></li>
+                            <li><a href="#">Home3</a></li>
+                            <li><a href="#">Home4</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="second-li nav-item"><a class="nav-link" href="#">Page <i
+                                class="fas fa-chevron-down"></i></a>
+
+                        <ul class="hover-menu">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">FAQUs</a></li>
+                            <li><a href="#">404 page</a></li>
+                            <li><a href="#">tablet</a></li>
+                            <li><a href="#">member</a></li>
+                            <li><a href="#">font awesome</a></li>
+                            <li><a href="#footer">footer</a></li>
+                            <li><a href="#">middle point</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="third-li nav-item"><a class="nav-link" href="#">Services <i
+                                class="fas fa-chevron-down"></i></a>
+
+                        <ul class="hover-menu">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">FAQUs</a></li>
+                            <li><a href="#">404 page</a></li>
+                            <li><a href="#">tablet</a></li>
+                            <li><a href="#">member</a></li>
+                            <li><a href="#">font awesome</a></li>
+                            <li><a href="#footer">footer</a></li>
+                            <li><a href="#">middle point</a></li>
+                            <li><a href="#">FAQUs</a></li>
+                            <li><a href="#">404 page</a></li>
+                            <li><a href="#">social</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="fourth-li nav-item"><a class="nav-link" href="#">projecs <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="hover-menu">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">FAQUs</a></li>
+                            <li><a href="#">404 page</a></li>
+                            <li><a href="#">tablet</a></li>
+                            <li><a href="#">member</a></li>
+                            <li><a href="#">font awesome</a></li>
+                            <li><a href="#footer">footer</a></li>
+                            <li><a href="#">middle point</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="fifth-li nav-item"><a class="nav-link" href="#">blogs <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="hover-menu">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">FAQUs</a></li>
+                            <li><a href="#">404 page</a></li>
+                            <li><a href="#">tablet</a></li>
+                            <li><a href="#">member</a></li>
+                            <li><a href="#">font awesome</a></li>
+                            <li><a href="#footer">footer</a></li>
+                            <li><a href="#">middle point</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="sixth-li nav-item"><a class="nav-link" href="#">contact <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="hover-menu">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">linkedin</a></li>
+                            <li><a href="#">Tweeter</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="seven nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home-slider -->
 
     <section id="homeSlider">
-        <div class="container">
-            <div class="sliderContent">
-                <h1>Best Quality Steel For Construction</h1>
-                <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem.</p>
-                <button class="worker-btn">WORK WITH US</button>
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-slide-to="0" data-target="#slider" class="active"></li>
+                <li data-slide-to="1" data-target="#slider"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-img-1 active">
+                    <div class="container">
+                        <div class="carousel-caption text-left  text-md-center text-lg-left">
+                            <h1 class="display-4">Best Quality Steel For <br> Construction</h1>
+                            <p class="lead pb-3">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem.</p>
+                            <button class="worker-btn">WORK WITH US</button>
 
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-2">
+                    <div class="container">
+                        <div class="carousel-caption text-left  text-md-center text-lg-left">
+                            <h1 class="display-4">Experience Is Better Way To <br> Build Success</h1>
+                            <p class="lead pb-3">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut
+                                imperdiet eu, iaculis a sem.</p>
+                            <button class="worker-btn">WORK WITH US</button>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
-            <div class="sliderNav">
-                <span></span>
-                <span></span>
-            </div>
-
         </div>
     </section>
 
     <section class="services">
         <div class="container">
-            <div class="service-wrapper">
 
-                <div class="singlebox">
-                    <div class="service-icon">
-                        <i class="fas fa-people-carry"></i>
+            <div class="row text-center">
+                <div class="col-lg-3 mb-3">
+                    <div class="singlebox">
+                        <div class="service-icon">
+                            <i class="fas fa-people-carry"></i>
+                        </div>
+                        <div class="service-title">
+                            <h2>Architecture & Engineering</h2>
+                        </div>
+                        <div class="servicedesc">
+                            <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                        </div>
+                        <div class="slink">
+                            <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
+                        </div>
                     </div>
-                    <div class="service-title">
-                        <h2>Architecture & Engineering</h2>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="singlebox">
+                        <div class="service-icon">
+                            <i class="fas fa-bezier-curve"></i>
+                        </div>
+                        <div class="service-title">
+                            <h2>Consultant & Preparation</h2>
+                        </div>
+                        <div class="servicedesc">
+                            <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                        </div>
+                        <div class="slink">
+                            <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
+                        </div>
                     </div>
-                    <div class="servicedesc">
-                    <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="singlebox">
+                        <div class="service-icon">
+                            <i class="fas fa-balance-scale-left"></i>
+                        </div>
+                        <div class="service-title">
+                            <h2>Infrastucture & Customizing</h2>
+                        </div>
+                        <div class="servicedesc">
+                            <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                        </div>
+                        <div class="slink">
+                            <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
+                        </div>
                     </div>
-                    <div class="slink">
-                        <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="singlebox">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="service-title">
+                            <h2>Builder with Engineering</h2>
+                        </div>
+                        <div class="servicedesc">
+                            <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                        </div>
+                        <div class="slink">
+                            <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
+                        </div>
                     </div>
-                </div>    
-
-                <div class="singlebox">
-                    <div class="service-icon">
-                        <i class="fas fa-bezier-curve"></i>
-                    </div>
-                    <div class="service-title">
-                        <h2>Consultant & Preparation</h2>
-                    </div>
-                    <div class="servicedesc">
-                    <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
-                    </div>
-                    <div class="slink">
-                        <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
-                    </div>
-                </div>    
-
-                <div class="singlebox">
-                    <div class="service-icon">
-                        <i class="fas fa-balance-scale-left"></i>
-                    </div>
-                    <div class="service-title">
-                        <h2>Infrastucture & Customizing</h2>
-                    </div>
-                    <div class="servicedesc">
-                    <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
-                    </div>
-                    <div class="slink">
-                        <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
-                    </div>
-                </div>    
-
-
-                <div class="singlebox">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="service-title">
-                        <h2>Builder with Engineering</h2>
-                    </div>
-                    <div class="servicedesc">
-                    <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
-                    </div>
-                    <div class="slink">
-                        <h3><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></h3>
-                    </div>
-                </div>    
-
+                </div>
             </div>
 
         </div>
 
     </section>
 
+    <!-- Working Project -->
     <section id="ourWork">
         <div class="container">
             <div class="work-wrapper">
-                <div class="all-content">
-                    <div class="image">
-                        <img src="image/our-project.jpg" alt="">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="image">
+                            <img class="img-fluid" src="image/our-project.jpg" alt="">
+                        </div>
                     </div>
+                    <div class="col-md-6">
                         <div class="teamDetails">
                             <div class="tile-tag">
                                 <h1>
@@ -234,170 +268,191 @@
                                 </h1>
                             </div>
                             <div class="para">
-                                <p> Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse vulputate porttitor condimentum. Proin viverra orci a leo suscipit placerat. Sed feugiat posuere semper. Cras vitae mi erat</p>
+                                <p> Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu,
+                                    iaculis
+                                    a sem. Donec vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse
+                                    vulputate porttitor condimentum. Proin viverra orci a leo suscipit placerat. Sed
+                                    feugiat
+                                    posuere semper. Cras vitae mi erat</p>
                             </div>
-                            <ul class="working-option">
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Building Quality</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Honest Advisors</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> 24/1week Supports</a></li>
-                            </ul>
-
-                            <ul class="working-option">
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Performances Team</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Work Solutions</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Work & Deadline</a></li>
-                            </ul>
-
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="working-option">
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Building Quality</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Honest Advisors</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> 24/1week Supports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="working-option">
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Performances Team</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Work Solutions</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Work & Deadline</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <button class="start">
                                 Get start
                             </button>
                         </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </section>
-                                <!--  -->
+    <!-- Counting Number -->
     <section id="counter">
-
-        <div class="container">
-
-            <div class="counter-wrapper">
-
-                <div class="singleContent">
-                    <div class="singleIcone">
-                        <i class="fas fa-mug-hot"></i>
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-5">
+                        <div class="singleContent">
+                            <div class="singleIcone">
+                                <i class="fas fa-mug-hot"></i>
+                            </div>
+                            <div class="singleTitle">
+                                <h1 class="counter">1200</h1>
+                            </div>
+                            <div class="singleTitle2">
+                                <h3>happiness customers</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="singleTitle">
-                        <h1 class="counter">1200</h1>
+                    <div class="col-md-3">
+                        <div class="singleContent">
+                            <div class="singleIcone">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="singleTitle">
+                                <h1 class="counter">2080</h1>
+                            </div>
+                            <div class="singleTitle2">
+                                <h3>PROJECTS COMPLETED</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="singleTitle2">
-                       <h3>happiness customers</h3>
+                    <div class="col-md-3">
+                        <div class="singleContent">
+                            <div class="singleIcone">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="singleTitle">
+                                <h1 class="counter">4000</h1>
+                            </div>
+                            <div class="singleTitle2">
+                                <h3>WORLD BRANCHES</h3>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-
-                <div class="singleContent">
-                    <div class="singleIcone">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <div class="singleTitle">
-                        <h1 class="counter">2080</h1>
-                    </div>
-                    <div class="singleTitle2">
-                       <h3>PROJECTS COMPLETED</h3>
-                    </div>
-                </div>
-
-
-                <div class="singleContent">
-                    <div class="singleIcone">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <div class="singleTitle">
-                        <h1 class="counter">4000</h1>
-                    </div>
-                    <div class="singleTitle2">
-                       <h3>WORLD BRANCHES</h3>
-                    </div>
-                </div>
-
-
-                <div class="singleContent">
-                    <div class="singleIcone">
-                        <i class="fas fa-broadcast-tower"></i>
-                    </div>
-                    <div class="singleTitle">
-                        <h1 class="counter">100</h1>
-                    </div>
-                    <div class="singleTitle2">
-                       <h3>SPECIAL WINNER</h3>
+                    <div class="col-md-3">
+                        <div class="singleContent">
+                            <div class="singleIcone">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                            <div class="singleTitle">
+                                <h1 class="counter">100</h1>
+                            </div>
+                            <div class="singleTitle2">
+                                <h3>SPECIAL WINNER</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
-    <!--  -->
+    <!-- Project -->
 
     <section id="projects">
         <div class="title-content">
-            <div class="more-title"><h1>more form us</h1></div>
-            <div class="more-para">
+            <div class="more-title mb-3 mb-sm-0">
+                <h1>more form us</h1>
+            </div>
+            <div class="more-para d-none d-sm-block">
                 <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet
                     Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
             </div>
         </div>
 
-    <div class="container">
-        <div class="serv-wrapper">
-            <div class="service-item">
-                <div class="serv-img">
-                    <img src="image/service-item1.jpg" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="service-item">
+                        <div class="serv-img">
+                            <img src="image/service-item1.jpg" alt="">
+                        </div>
+                        <div class="serv-title">
+                            <h3>CONSTRUCTION TEAM</h3>
+                        </div>
+                        <div class="serv-para">
+                            <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="serv-title">
-                    <h3>CONSTRUCTION TEAM</h3>
+                <div class="col-md-3 mb-3">
+                    <div class="service-item">
+                        <div class="serv-img">
+                            <img src="image/service-item2.jpg" alt="">
+                        </div>
+                        <div class="serv-title">
+                            <h3>PROJECT DEADLINE</h3>
+                        </div>
+                        <div class="serv-para">
+                            <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="serv-para">
-                    <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                <div class="col-md-3 mb-3">
+                    <div class="service-item">
+                        <div class="serv-img">
+                            <img src="image/service-item3.jpg" alt="">
+                        </div>
+                        <div class="serv-title">
+                            <h3>CONSTRUCTION ACTIVITY</h3>
+                        </div>
+                        <div class="serv-para">
+                            <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="service-item">
-                <div class="serv-img">
-                    <img src="image/service-item2.jpg" alt="">
-                </div>
-                <div class="serv-title">
-                    <h3>PROJECT DEADLINE</h3>
-                </div>
-                <div class="serv-para">
-                    <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                <div class="col-md-3">
+                    <div class="service-item">
+                        <div class="serv-img">
+                            <img src="image/service-item4.jpg" alt="">
+                        </div>
+                        <div class="serv-title">
+                            <h3> PROJECT DEADLINE</h3>
+                        </div>
+                        <div class="serv-para">
+                            <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="service-item">
-                <div class="serv-img">
-                    <img src="image/service-item3.jpg" alt="">
-                </div>
-                <div class="serv-title">
-                    <h3>CONSTRUCTION ACTIVITY</h3>
-                </div>
-                <div class="serv-para">
-                    <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="serv-img">
-                    <img src="image/service-item4.jpg" alt="">
-                </div>
-                <div class="serv-title">
-                    <h3> PROJECT DEADLINE</h3>
-                </div>
-                <div class="serv-para">
-                    <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
-                </div>
-            </div>
         </div>
-
-    </div>
     </section>
 
-    <!--  -->
+    <!-- Pricing Area -->
 
     <section id="pricing">
         <div class="title-content">
-            <div class="more-title"><h1>PRICE PLAN</h1></div>
-            <div class="more-para">
+            <div class="more-title">
+                <h1>PRICE PLAN</h1>
+            </div>
+            <div class="more-para d-none d-sm-block">
                 <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet
                     Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
             </div>
         </div>
-    
+
         <div class="container">
-            <div class="price-wrapper">
+            <div class="row">
+                <div class="col-lg-4 text-md-center text-xl-left my-2">
                     <div class="price-concept">
                         <div class="price-type">
                             <h2>start</h2>
@@ -419,543 +474,547 @@
                             <h5> Get started</h5>
                         </button>
                     </div>
-                
-                
-        
-                <div class="price-concept">
-                    <div class="price-type">
-                        <h2>pro</h2>
-                    </div>
-                    <div class="price">
-                        <h2>$100<span>/m</span></h2>
-                    </div>
-                    <ul class="price-reason">
-                        <li><i class="fas fa-check"></i> Build with advance business
-                        </li>
-                        <li><i class="fas fa-check"></i> Customizing to builder</li>
-                        <li><i class="fas fa-check"></i> Best agency market</li>
-                        <li><i class="fas fa-check"></i> Customer Service</li>
-                        <li><i class="fas fa-check"></i> Up to 1000 Worker</li>
-                        <li><i class="fas fa-check"></i> Unlimited Project</li>
-                        <li><i class="fas fa-check"></i> Build with longer terms</li>
-                    </ul>
-                    <button class="start-btn">
-                        <h5> Get started</h5>
-                    </button>
                 </div>
-        
-                <div class="price-concept">
-                    <div class="price-type">
-                        <h2>premium</h2>
+                <div class="col-lg-4 text-md-center text-xl-left my-2">
+                    <div class="price-concept">
+                        <div class="price-type">
+                            <h2>pro</h2>
+                        </div>
+                        <div class="price">
+                            <h2>$100<span>/m</span></h2>
+                        </div>
+                        <ul class="price-reason">
+                            <li><i class="fas fa-check"></i> Build with advance business
+                            </li>
+                            <li><i class="fas fa-check"></i> Customizing to builder</li>
+                            <li><i class="fas fa-check"></i> Best agency market</li>
+                            <li><i class="fas fa-check"></i> Customer Service</li>
+                            <li><i class="fas fa-check"></i> Up to 1000 Worker</li>
+                            <li><i class="fas fa-check"></i> Unlimited Project</li>
+                            <li><i class="fas fa-check"></i> Build with longer terms</li>
+                        </ul>
+                        <button class="start-btn">
+                            <h5> Get started</h5>
+                        </button>
                     </div>
-                    <div class="price">
-                        <h2>$179<span>/m</span></h2>
+                </div>
+                <div class="col-lg-4 text-md-center text-xl-left my-2">
+                    <div class="price-concept">
+                        <div class="price-type">
+                            <h2>premium</h2>
+                        </div>
+                        <div class="price">
+                            <h2>$179<span>/m</span></h2>
+                        </div>
+                        <ul class="price-reason">
+                            <li><i class="fas fa-check"></i> Build with advance business
+                            </li>
+                            <li><i class="fas fa-check"></i> Customizing to builder</li>
+                            <li><i class="fas fa-check"></i> Best agency market</li>
+                            <li><i class="fas fa-check"></i> Customer Service</li>
+                            <li><i class="fas fa-check"></i> Up to 1000 Worker</li>
+                            <li><i class="fas fa-check"></i> Unlimited Project</li>
+                            <li><i class="fas fa-check"></i> Build with longer terms</li>
+                        </ul>
+                        <button class="start-btn">
+                            <h5> Get started</h5>
+                        </button>
                     </div>
-                    <ul class="price-reason">
-                        <li><i class="fas fa-check"></i> Build with advance business
-                        </li>
-                        <li><i class="fas fa-check"></i> Customizing to builder</li>
-                        <li><i class="fas fa-check"></i> Best agency market</li>
-                        <li><i class="fas fa-check"></i> Customer Service</li>
-                        <li><i class="fas fa-check"></i> Up to 1000 Worker</li>
-                        <li><i class="fas fa-check"></i> Unlimited Project</li>
-                        <li><i class="fas fa-check"></i> Build with longer terms</li>
-                    </ul>
-                    <button class="start-btn">
-                        <h5> Get started</h5>
-                    </button>
                 </div>
             </div>
         </div>
-    
+
     </section>
 
-    <!--  -->
+    <!--  Working Idea-->
 
     <section id="working-idea">
-        <div class="idea-project">
-            <div class="left-side">
-                
-            
-            </div>
-            <div class="right-side">
-                <div class="inner-column">
-                    <div class="inner-tile">
-                        <h1>CHECK OUT OUR LATEST IDEA</h1>
-                    </div>
-                    <div class="inner-para">
-                        <p>Mauris mattis & auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus.</p>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 one">
+                    <div class="left-side">
 
-                    <div class="inner-idea">
-                        <div class="left-icon">
-                            <div class="r-icon"><i class="fas fa-mug-hot"></i></div>
-                            <div class="idea1">
-                                <h2>GREAT SUPPORT</h2>
-                                <p>Best Sevice For Customer</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 one">
+                    <div class="right-side">
+                        <div class="inner-column">
+                            <div class="inner-tile">
+                                <h1>CHECK OUT OUR LATEST IDEA</h1>
+                            </div>
+                            <div class="inner-para d-none d-sm-block">
+                                <p>Mauris mattis & auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu,
+                                    iaculis a
+                                    sem. Donec vehicula luctus.</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 my-2">
+                                    <div class="left-icon d-flex">
+                                        <div class="r-icon mr-3"><i class="fas fa-mug-hot"></i></div>
+                                        <div class="idea1">
+                                            <h2>GREAT SUPPORT</h2>
+                                            <p>Best Sevice For Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 my-2">
+                                    <div class="right-icon d-flex">
+                                        <div class="r-icon mr-3"> <i class="fas fa-layer-group"></i></div>
+                                        <div class="idea2">
+                                            <h2>WORK ONTIME</h2>
+                                            <p>Best Sevice For Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 my-2">
+                                    <div class="Ldown-icon d-flex">
+                                        <div class="r-icon mr-3"><i class="fas fa-link"></i></div>
+                                        <div class="idea3">
+                                            <h2>
+                                                CERTIFIED QUALITIES</h2>
+                                            <p>Best Sevice For Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="Rdown-icon d-flex">
+                                        <div class="r-icon mr-3"><i class="fas fa-broadcast-tower"></i></div>
+                                        <div class="idea4">
+                                            <h2>BEST BRANDING</h2>
+                                            <p>Best Sevice For Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="right-icon">
-                            <div class="r-icon"> <i class="fas fa-layer-group"></i></div>
-                            <div class="idea2">
-                                <h2>WORK ONTIME</h2>
-                                <p>Best Sevice For Customer</p>
-                            </div>
-                        </div>
                     </div>
-                
-
-                    <div class="inner-down">
-                        <div class="Ldown-icon">
-                            <div class="r-icon"><i class="fas fa-link"></i></div>
-                            <div class="idea3">
-                                <h2>
-                                    CERTIFIED QUALITIES</h2>
-                                <p>Best Sevice For Customer</p>
-                            </div>
-                        </div>
-
-                        <div class="Rdown-icon">
-                            <div class="r-icon" ><i class="fas fa-broadcast-tower"></i></div>
-                            <div class="idea4">
-                                <h2>BEST BRANDING</h2>
-                                <p>Best Sevice For Customer</p>
-                            </div>
-                        </div>
-                    </div>
-              </div>
+                </div>
             </div>
         </div>
     </section>
-    
-    <!--  -->
+
+    <!-- Team-Member -->
 
     <section id="team">
         <div class="title-content">
-            <div class="more-title"><h1>meet our team</h1></div>
-            <div class="more-para">
+            <div class="more-title">
+                <h1>meet our team</h1>
+            </div>
+            <div class="more-para d-none d-sm-block">
                 <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet
                     Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
             </div>
         </div>
         <div class="container">
-            <div class="team-wrapper">
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="image/158372393_1108792819547093_5895231866959763720_o.jpg" alt="">
-                        <div class="socialIcons">
-                            <a href="https://www.facebook.com/Humayun04032002" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                             <a href="#"><i class="fab fa-linkedin"></i></a>
-                          </div>
-                    </div>
-                    <div class="member-name">
-                        <h3>Humayun Ahmed</h3>
-                    </div>
-                    <div class="member-status">
-                        <p> MC rejected</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="image/2.jpg" alt="">
-                        <div class="socialIcons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                             <a href="#"><i class="fab fa-linkedin"></i></a>
-                          </div>
-                    </div>
-                    <div class="member-name">
-                        <h3>jame son</h3>
-                    </div>
-                    <div class="member-status">
-                        <p>Achitechure Design</p>
-                    </div>
-                </div>
-
-
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="image/3.jpg" alt="">
-                        <div class="socialIcons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                             <a href="#"><i class="fab fa-linkedin"></i></a>
-                          </div>
-                    </div>
-                    <div class="member-name">
-                        <h3>tony tiny</h3>
-                    </div>
-                    <div class="member-status">
-                        <p>civil engineer</p>
-                    </div>
-                </div>
-
-
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="image/4.jpg" alt="">
-                        <div class="socialIcons">
-                          <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                           <a href="#"><i class="fab fa-linkedin"></i></a>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="image/158372393_1108792819547093_5895231866959763720_o.jpg" alt="">
+                            <div class="socialIcons">
+                                <a href="https://www.facebook.com/Humayun04032002" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-name">
+                            <h3>Humayun Ahmed</h3>
+                        </div>
+                        <div class="member-status">
+                            <p> MC rejected</p>
                         </div>
                     </div>
-                    <div class="member-name">
-                        <h3>tom mas</h3>
-                    </div>
-                    <div class="member-status">
-                        <p>project manager</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="image/2.jpg" alt="">
+                            <div class="socialIcons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-name">
+                            <h3>jame son</h3>
+                        </div>
+                        <div class="member-status">
+                            <p>Achitechure Design</p>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="image/3.jpg" alt="">
+                            <div class="socialIcons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-name">
+                            <h3>tony tiny</h3>
+                        </div>
+                        <div class="member-status">
+                            <p>civil engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="image/4.jpg" alt="">
+                            <div class="socialIcons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-name">
+                            <h3>tom mas</h3>
+                        </div>
+                        <div class="member-status">
+                            <p>project manager</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="joinig">
-                    <button class="join-btn"><h2>join our team</h2></button>
-            </div>
+                    <button class="join-btn">
+                        join our team
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!--  -->
+    <!-- Project-Two  -->
 
     <section id="projects">
         <div class="title-content">
-            <div class="more-title"><h1>our best projects</h1></div>
-            <div class="more-para">
+            <div class="more-title mb-4 mb-sm-0">
+                <h1>our best projects</h1>
+            </div>
+            <div class="more-para d-none d-sm-block">
                 <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet
                     Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
             </div>
         </div>
         <div class="container">
-            <div class="pro-wrapper">
-                <div class="flex-box">
-                    <div class="cover">
-                        <div class="imagee">
-                            <img src="image/370x300-project-1.jpg" alt="">
-                            <div class="head-text">
-                                
-                                    <p>Construction</p>
-                            
-                                    
-                                    <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
-                                
-                            
-                                    <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                                
-                            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="imagee">
+                        <img src="image/370x300-project-1.jpg" alt="">
+                        <div class="head-text">
+                            <p>Construction</p>
+                            <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
+                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                        <div class="cover">
-                            <div class="imagee">
-                                <img src="image/370x300-project-2.jpg" alt="">
-                                <div class="head-text">
-                                        
-                                    <p>Construction</p>
-                            
-                                    
-                                    <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
-                                
-                            
-                                    <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    <div class="cover">
-                        <div class="imagee">
-                            <img src="image/370x300-project-3.jpg" alt="">
-                                    <div class="head-text">
-                                            
-                                        <p>Construction</p>
-                                
-                                        
-                                        <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
-                                    
-                                
-                                        <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                                    
-                                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="imagee">
+                        <img src="image/370x300-project-2.jpg" alt="">
+                        <div class="head-text">
+                            <p>Construction</p>
+                            <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
+                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                        <div class="cover">
-                            <div class="imagee">
-                                <img src="image/370x300-project-4.jpg" alt="">
-                                <div class="head-text">
-                                            
-                                    <p>Construction</p>
-                            
-                                    
-                                    <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
-                                
-                            
-                                    <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                                
-                                </div>
-                            </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="imagee">
+                        <img src="image/370x300-project-3.jpg" alt="">
+                        <div class="head-text">
+                            <p>Construction</p>
+                            <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
+                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
                         </div>
-                        <div class="cover">
-                            <div class="imagee">
-                                <img src="image/370x300-project-5.jpg" alt="">
-                                <div class="head-text">
-                                            
-                                    <p>Construction</p>
-                            
-                                    
-                                    <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
-                                
-                            
-                                    <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                                
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cover">
-                            <div class="imagee">
-                                <img src="image/370x300-project-6.jpg" alt="">
-                                <div class="head-text">
-                                            
-                                    <p>Construction</p>
-                            
-                                    
-                                    <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
-                                
-                            
-                                    <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                                
-                                </div>
-                            </div>
-                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="imagee">
+                        <img src="image/370x300-project-4.jpg" alt="">
+                        <div class="head-text">
+                            <p>Construction</p>
+                            <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
+                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="imagee">
+                        <img src="image/370x300-project-5.jpg" alt="">
+                        <div class="head-text">
+                            <p>Construction</p>
+                            <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
+                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="imagee">
+                        <img src="image/370x300-project-6.jpg" alt="">
+                        <div class="head-text">
+                            <p>Construction</p>
+                            <h3>DISCUSSION TO MAKE A BETTER PROJECT PLAN</h3>
+                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
     </section>
 
+    <!-- News-Part -->
+
+
+    <section id="news-part">
+        <div class="title-content">
+            <div class="more-title mb-4 mb-sm-0">
+                <h1>Our latest news</h1>
+            </div>
+            <div class="more-para d-none d-sm-block">
+                <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet
+                    Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="news-item">
+                        <div class="news-pic">
+                            <img src="image/blog-grid-1.jpg" alt="">
+                        </div>
+                        <div class="meta">
+                            <div class="comment-box">
+                                <p class="date">11 sep, 2019</p> <span> <i class="fas fa-minus"></i> </span>
+                                <p class="cmnt-count">comments (0)</p>
+                            </div>
+                            <h3>WE WORK HARD TO BUILD</h3>
+                            <div class="para">Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput
+                                porttitor condimentum.</div>
+                            <div class="learn">
+                                <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-item">
+                        <div class="news-pic">
+                            <a href="#"><img src="image/blog-grid-2.jpg" alt=""></a>
+                        </div>
+                        <div class="meta">
+                            <div class="comment-box">
+                                <p class="date">11 sep, 2019</p> <span> <i class="fas fa-minus"></i> </span>
+                                <p class="cmnt-count">comments (0)</p>
+                            </div>
+                            <h3>WE WORK HARD TO BUILD</h3>
+                            <div class="para">Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput
+                                porttitor condimentum.</div>
+                            <div class="learn">
+                                <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-item">
+                        <div class="news-pic">
+                            <a href="#"><img src="image/blog-grid-3.jpg" alt=""></a>
+                        </div>
+                        <div class="meta">
+                            <div class="comment-box">
+                                <p class="date">11 sep, 2019</p> <span> <i class="fas fa-minus"></i> </span>
+                                <p class="cmnt-count">comments (0)</p>
+                            </div>
+                            <h3>WE WORK HARD TO BUILD</h3>
+                            <div class="para">Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput
+                                porttitor condimentum.</div>
+                            <div class="learn">
+                                <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+
+    <section id="subscribe" class="d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 d-none d-lg-block">
+                    <div class="subscribe-area">
+                        <h4>subscribe now</h4>
+                        <form action="#" method="POST">
+                            <input class="bt-email" type="email" required="" name="ne" value=""
+                                placeholder="Enter your e-mail">
+                            <button type="submit" class="bt-submit">submit </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="subscribe-area">
+                        <h4>contacts now</h4>
+                        <div class="contact-num">
+                            <p>Call Us : +(98) 888 7777</p>
+                            <p>Email Us : sample-email@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="subscribe-area">
+                        <h4>follow us</h4>
+                        <div class="follow-link">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer - Part - Start -->
+    <section id="top-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-box">
+                        <h3>ABOUT US</h3>
+                        <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a
+                            sem.
+                            Donec vehicula luctus nunc in laoreet.</p>
+
+                        <div class="footer-icons d-flex">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-box">
+                        <h3>CONTACT US</h3>
+                        <p> <i class="fa fa-home"></i> Raffles Avenue, <br> <span>Singapore Flyer, Singapor</span> </p>
+                        <p><i class="fa fa-phone"></i> +(98) 888 7777 <br> <span>+(12) 999 22333</span> </p>
+                        <p><i class="fas fa-envelope"></i> sample-email@example.com
+                            <span>myinfo@example.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-box">
+                        <h3>USEFULL LINKS</h3>
+                        <div class="f-box-menu">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> home</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> about us</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> services</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> news</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> protfolio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a name='footer'></a>
+                <div class="col-md-3">
+                    <div class="footer-box brder">
+                        <h3>RECENT POST</h3>
+                        <div class="footer-margin">
+                            <div class="Rdate">
+                                <h3>24</h3>
+                                <p>April</p>
+                                <p>2019</p>
+                            </div>
+                            <div class="post-name">
+                                <h4>WHERE WE'RE STANDING RIGHT NOW</h4>
+                                <p><i class="fas fa-user"></i> By Adimn <i class="fas fa-comment"></i> 28</p>
+                            </div>
+                        </div>
+                        <div class="Rdate">
+                            <h3>24</h3>
+                            <p>April</p>
+                            <p>2019</p>
+                        </div>
+                        <div class="post-name">
+                            <h4>AND MAYBE KNOWING ISN'T THE POINT</h4>
+                            <p><i class="fas fa-user"></i> By Adimn <i class="fas fa-comment"></i> 28</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
     <!--  -->
-
-
-<section id="news-part">
-    <div class="title-content">
-        <div class="more-title"><h1>Our latest news</h1></div>
-        <div class="more-para">
-            <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet
-                Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="news-wrapper">
-            <div class="news-item">
-                <div class="news-pic">
-                    <img src="image/blog-grid-1.jpg" alt="">
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-wrapper d-flex">
+                <div class="copyrighter">
+                    &copy; Copyright 2019 themelazer.info All rights reserved.
                 </div>
-                    <div class="meta">
-                        <div class="comment-box">
-                            <p class="date">11 sep, 2019</p> <span> <i class="fas fa-minus"></i> </span> <p class="cmnt-count">comments (0)</p>
-                        </div>
-                        
-                        <h3>WE WORK HARD TO BUILD</h3>
-                        <div class="para">Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput porttitor condimentum.</div>
-
-                        <div class="learn">
-                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-pic">
-                    <a href="#"><img src="image/blog-grid-2.jpg" alt=""></a>
-                </div>
-                    <div class="meta">
-                        <div class="comment-box">
-                            <p class="date">11 sep, 2019</p> <span> <i class="fas fa-minus"></i> </span> <p class="cmnt-count">comments (0)</p>
-                        </div>
-                        
-                        <h3>WE WORK HARD TO BUILD</h3>
-                        <div class="para">Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput porttitor condimentum.</div>
-
-                        <div class="learn">
-                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-pic">
-                    <a href="#"><img src="image/blog-grid-3.jpg" alt=""></a>
-                </div>
-                    <div class="meta">
-                        <div class="comment-box">
-                            <p class="date">11 sep, 2019</p> <span> <i class="fas fa-minus"></i> </span> <p class="cmnt-count">comments (0)</p>
-                        </div>
-                        
-                        <h3>WE WORK HARD TO BUILD</h3>
-                        <div class="para">Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput porttitor condimentum.</div>
-
-                        <div class="learn">
-                            <a href="#">learn more <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
-<!--  -->
-
-
-
-<section id="subscribe">
-    <div class="container">
-        <div class="subswrapper">
-            <div class="subscribe-area">
-                <h4>subscribe now</h4>
-                <form action="#" method="POST">
-                    <input class="bt-email" type="email" required="" name="ne" value="" placeholder="Enter your e-mail">
-                    <button type="submit" class="bt-submit">submit </button>
-                </form>
-            </div>
-
-
-            <div class="subscribe-area">
-                <h4>contacts now</h4>
-                <div class="contact-num">
-                    <p>Call Us : +(98) 888 7777</p>
-                    <p>Email Us : sample-email@example.com</p>
-                </div>
-            </div>
-
-
-            <div class="subscribe-area">
-                <h4>follow us</h4>
-                <div class="follow-link">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="top-footer">
-    <div class="container">
-        <div class="top-footer-wrapper">
-            <div class="footer-box">
-                <h3>ABOUT US</h3>
-                <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet.</p>
-                
-                <div class="footer-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                </div>
-            </div>
-            <a name='footer'></a>
-            <div class="footer-box">
-                <h3>CONTACT US</h3>
-                <p> <i class="fa fa-home"></i> Raffles Avenue, <br>   <span>Singapore Flyer, Singapor</span> </p>
-                <p><i class="fa fa-phone"></i> +(98) 888 7777 <br> <span>+(12) 999 22333</span> </p>
-                <p><i class="fas fa-envelope"></i> sample-email@example.com
-                    <span>myinfo@example.com</span></p>
-            </div>
-
-
-            <div class="footer-box">
-                <h3>USEFULL LINKS</h3>
-                <div class="f-box-menu">
-                    <ul>
-                        <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> home</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> about us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> services</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> news</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right" aria-hidden="true"></i> protfolio</a></li>
+                <div class="copyright-Menu">
+                    <ul class="d-flex">
+                        <li><a href="#">FAQS </a></li>
+                        <li><a href="#">Privacy </a></li>
+                        <li><a href="#">Policy </a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-box">
-                <h3>RECENT POST</h3>
-                <div class="footer-margin">
-                    <div class="Rdate">
-                        <h3>24</h3>
-                        <p>April</p>
-                        <p>2019</p>
-                    </div>
-                    <div class="post-name">
-                        <h4>WHERE WE'RE STANDING RIGHT NOW</h4>
-                        <p><i class="fas fa-user"></i> By Adimn <i class="fas fa-comment"></i> 28</p>
-                    </div>
-                </div>
-                <div class="Rdate">
-                    <h3>24</h3>
-                    <p>April</p>
-                    <p>2019</p>
-                </div>
-                <div class="post-name">
-                    <h4>AND MAYBE KNOWING ISN'T THE POINT</h4>
-                    <p><i class="fas fa-user"></i> By Adimn <i class="fas fa-comment"></i> 28</p>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
-<hr>
-<!--  -->
-<footer id="footer">
-    <div class="container">
-        <div class="footer-wrapper">
-            <div class="copyrighter">
-                &copy; Copyright 2019 themelazer.info All rights reserved.
-            </div>
-            <div class="copyright-Menu">
-               <ul>
-                  <li><a href="#">FAQS </a></li>
-                  <li><a href="#">Privacy </a></li>
-                  <li><a href="#">Policy </a></li>
-                  <li><a href="#">Support</a></li>
-               </ul>
-            </div>
+    </footer>
+    <!--  -->
+
+    <footer id="side-icons" class="d-none">
+        <div class="side-ber">
+            <ul>
+                <li class="fb"><a href="#">Facebook <i class="fab fa-facebook"></i></a></li>
+                <li class="google"><a href="#"> Google <img
+                            src="https://img.icons8.com/fluent/48/000000/google-logo.png"></a></li>
+                <li class="tweet"><a href="#"> Tweeter <i class="fab fa-twitter-square"></i></a></li>
+                <li class="link"><a href="#"> linkedin <i class="fab fa-linkedin"></i></a></li>
+                <li class="behance"><a href="#"> behance <i class="fab fa-behance"></i></a></li>
+            </ul>
         </div>
-    </div>
-</footer>
-<!--  -->
-
-<footer id="side-icons">
-    <div class="side-ber">
-        <ul>
-            <li class="fb"><a href="#">Facebook <i class="fab fa-facebook"></i></a></li>
-            <li class="google"><a href="#"> Google <img src="https://img.icons8.com/fluent/48/000000/google-logo.png"></a></li>
-            <li class="tweet"><a href="#"> Tweeter <i class="fab fa-twitter-square"></i></a></li>
-            <li class="link"><a href="#"> linkedin <i class="fab fa-linkedin"></i></a></li>
-            <li class="behance"><a href="#"> behance <i class="fab fa-behance"></i></a></li>
-        </ul>
-    </div>  
-</footer>
+    </footer>
 
 
-<script>
-    $(document).ready(function(){
+    <script>
+        $(document).ready(function () {
 
-        $(".counter").counterUp({
-            delay: 10,
-            time: 1200
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1200
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
+
 </html>
