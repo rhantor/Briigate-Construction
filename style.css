@@ -550,7 +550,7 @@ button.start:hover {
     color: #000;
 }
 .team-member:hover .socialIcons a {
-    transform: translateY(20px);
+    transform: translateY(30px);
     opacity: 1;
 }
 .joinig {
@@ -615,11 +615,41 @@ button.start:hover {
     text-decoration: none;
     transition: 0.5s;
 }
+.head-text a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #0ec8f5;
+    transform-origin: right;
+    transition: 300ms;
+}
+.head-text a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 85%;
+    height: 1px;
+    background-color: #fff;
+    transform-origin: left;
+}
+.head-text a i {
+    font-size: 13px;
+    transition: 300ms;
+}
 .imagee:hover a {
+    color: #fff;
+    text-decoration: none;
     transform: translateY(10);
     transform: translateX(5px);
     opacity: 1;
     background-color: transparent;
+}
+.imagee a:hover i {
+    transform: translateX(10px);
 }
 .imagee:hover .head-text {
     position: absolute;
@@ -704,9 +734,39 @@ button.start:hover {
     font-size: 16px;
     margin-left: 15px;
     margin-bottom: 15px;
+    position: relative;
+}
+.learn a:hover {
+    text-decoration: none;
+    color: #ff5200;
+}
+.learn a:hover i {
+    transform: translateX(10px);
+}
+.learn a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #0ec8f5;
+    transform-origin: right;
+    transition: 300ms;
+}
+.learn a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 85%;
+    height: 1px;
+    background-color: #ff5200;
+    transform-origin: left;
 }
 .learn a i {
-    font-size: 14px;
+    font-size: 13px;
+    transition: 300ms;
 }
 
 /* Subscribe */
@@ -957,4 +1017,3 @@ ul.hover-menu li a::before {
 ul.hover-menu li:hover a::before {
     width: 15px;
 }
-
